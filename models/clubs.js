@@ -1,8 +1,7 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
   
-const Schema = mongoose.Schema;
 
-const clubSchema = new Schema ({
+const clubSchema =  mongoose.Schema ({
     name: String,
     location: String,
     yearsPlayed: Number,

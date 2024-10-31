@@ -1,10 +1,12 @@
 import express from 'express'
-import Club from '../models/clubs.js';
+import clubs from '../models/clubs.js';
+
 
 const router = express.Router()
 
 router.get("/", async (req, res) => {
-	console.log(req.clubs);
+	console.log('yo');
+	
 	try {
 		const clubs = await Club.find()
 		res.json(clubs)
@@ -15,12 +17,14 @@ router.get("/", async (req, res) => {
 })
 
 router.post('/', async (req, res, next) => {
-	console.log(clubs);
+	console.log(club);
 	
 
 })
 
 router.delete('/', (req, res, next) => {
+	console.log();
+	
 	
 })
 
